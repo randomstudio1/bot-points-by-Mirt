@@ -4,11 +4,11 @@ const fs = require('fs');
 
 module.exports = {
   name: 're-point',
-  description: 'إزالة عدد محدد من النقاط لعضو معين',
+  description: 'To Remove Point',
   execute(message, args) {
     // التحقق من أن العضو لديه صلاحية المشرف أو الأدمنستريتور
     if (!message.member.hasPermission('ADMINISTRATOR')) {
-      return message.channel.send('ليس لديك الصلاحية لاستخدام هذا الأمر.');
+      return message.channel.send('');
     }
 
     // التحقق من وجود عضو مذكور
